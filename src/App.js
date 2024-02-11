@@ -1,5 +1,4 @@
-import logo from "./logo.svg";
-import "./App.css";
+
 import { useState, useEffect } from "react";
 function App() {
   const hours = new Date().getHours();
@@ -7,7 +6,7 @@ function App() {
   let greet = "";
   const [currTime, setCurrTime] = useState(time);
   const [weather, setWeather] = useState(null);
-  const [city, setCity] = useState("noida");
+  const [city, setCity] = useState("Noida");
 
   //function to get and show current time
   const updateTime = () => {
@@ -44,8 +43,8 @@ function App() {
     <div className="App">
       <h1>Hey Swapnil</h1>
       <h2>
-        {greet}. The current time is {currTime}. The weather at your location is{" "}
-        {weather}{" "}
+        {greet}. The current time is {currTime}. The weather at your location {city} is{" "}
+        {weather}.{" "}
       </h2>
     </div>
   );
